@@ -1,0 +1,32 @@
+XLite\Model\Config:
+  - name: no_action
+    category: BitPay\BitPay
+    value: 0
+  - name: connect_action
+    category: BitPay\BitPay
+    value: 0
+XLite\Model\Payment\Method:
+  - service_name: BitPay
+    class: Module\BitPay\BitPay\Model\Payment\Processor\BitPayPayment
+    type: A
+    translations:
+      - code: en
+        name: BitPay
+    settings:
+      - name: riskSpeed
+        value: low
+      - name: network
+        value: livenet
+      - name: redirectURL
+      - name:  debug
+        value: 0
+      - name:  version
+        value: 2.0.0
+      - name:  private_key
+      - name:  public_key
+      - name:  token
+      - name:  connection
+        value: disconnected
+      - name:  pairing_code
+      - name:  pairing_expiration
+      - name:  status
